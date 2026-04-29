@@ -20,7 +20,7 @@ MAIN_KEY = base64.b64decode('WWcmdGMlREV1aDYlWmNeOA==')
 MAIN_IV = base64.b64decode('Nm95WkRyMjJFM3ljaGpNJQ==')
 RELEASEVERSION = "OB53"
 USERAGENT = "Dalvik/2.1.0 (Linux; U; Android 13; CPH2095 Build/RKQ1.211119.001)"
-SUPPORTED_REGIONS = {"IND", "BR", "US", "SAC", "NA", "SG", "RU", "ID", "TW", "VN", "TH", "ME", "PK", "CIS", "BD", "EUROPE"}
+SUPPORTED_REGIONS = {"IND", "BR", "US", "SAC", "NA", "SG", "RU", "ID", "TW", "VN", "TH", "ME", "PK", "CIS", "BD", "EUROPE", "STAR"}
 
 # === Flask App Setup ===
 
@@ -55,8 +55,10 @@ def get_account_credentials(region: str) -> str:
         return "uid=4363983977&password=ISHITA_0AFN5_BY_SPIDEERIO_GAMING_UY12H"
     elif r in {"BR", "US", "SAC", "NA"}:
         return "uid=4682784982&password=GHOST_TNVW1_RIZER_QTFT0"
+    elif r == "STAR":
+        return "uid=4763338440&password=yegyrBYSTARGMRdUIUmGU9"
     else:
-        return "uid=4418979127&password=RIZER_K4CY1_RIZER_WNX02"
+        return "uid=4763338446&password=yegyrBYSTARGMRn2twPRKS"
 
 # === Token Generation ===
 
